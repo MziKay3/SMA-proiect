@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/tkt">
+
+
+    <TextView
+        android:id="@+id/movieNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie: "
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="18sp"
+        android:layout_below="@id/movieNameTextView"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:textSize="18sp"
+        android:layout_below="@id/dateTextView"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/seatsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seats: "
+        android:textSize="18sp"
+        android:layout_below="@id/timeTextView"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: "
+        android:textSize="18sp"
+        android:layout_below="@id/seatsTextView"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:textSize="18sp"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

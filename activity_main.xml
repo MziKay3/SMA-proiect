@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bkg">
+
+
+    <Spinner
+        android:id="@+id/movieSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:spinnerMode="dropdown"
+        android:textColor="@android:color/white"
+        android:popupBackground="@android:color/holo_purple"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_border" />
+
+
+    <Spinner
+        android:id="@+id/dateSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieSpinner"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:spinnerMode="dropdown"
+        android:textColor="@android:color/white"
+        android:popupBackground="@android:color/holo_purple"
+        android:background="@drawable/spinner_border" />
+
+
+    <RadioGroup
+        android:id="@+id/timeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateSpinner"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/spinner_border" />
+
+
+    <GridLayout
+        android:id="@+id/seatGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeRadioGroup"
+        android:layout_marginTop="20dp"
+        android:columnCount="10"
+        android:rowCount="8"
+        android:padding="4dp"
+        android:alignmentMode="alignMargins"
+        android:layout_gravity="center">
+    </GridLayout>
+
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seatGrid"
+        android:layout_marginTop="16dp"
+        android:text="Total Price: 0"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/spinner_border" />
+
+
+    <Button
+        android:id="@+id/bookTicketButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Book Ticket"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/deselectAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookTicketButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Deselect All"
+        android:textSize="18sp" />
+</RelativeLayout>
